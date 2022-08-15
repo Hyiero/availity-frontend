@@ -1,4 +1,5 @@
 import { 
+    Base,
     ProblemOnePage,
     ProblemTwoPage,
     ProblemThreePage,
@@ -9,6 +10,7 @@ import {
 } from './pages';
 
 export const routes = [
+    { path: '/', name: 'Home', element: Base },
     { path: '/problem/one', name: 'Problem One', element: ProblemOnePage },
     { path: '/problem/two', name: 'Problem Two',element: ProblemTwoPage },
     { path: '/problem/three', name: 'Problem Three', element: ProblemThreePage },

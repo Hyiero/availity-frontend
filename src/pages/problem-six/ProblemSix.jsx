@@ -27,7 +27,7 @@ export default function ProblemSixPage() {
     const uploadFile = (file) => {
         const config = { headers: { 'Content-Type': 'multipart/form-data'} };
 
-        axios.post('https://localhost:44312/api/enrollment/split?groupBy=InsuranceCompany', file, config)
+        axios.post(`${process.env.REACT_APP_BASEURL}api/enrollment/split?groupBy=InsuranceCompany`, file, config)
         .then(response => {
             setSelectedFile('');
             for(var prop in response.data) {

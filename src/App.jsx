@@ -7,19 +7,19 @@ import './styles.css';
 function App() {
     return (
         <div>
-        <CssBaseline />
-        <Nav />
-        <Routes>
-            {
-                routes.map((route) => (
-                    <Route 
-                        key={route.name}
-                        path={route.path}
-                        element={<route.element />}>
-                    </Route>
-                ))
-            }
-        </Routes>
+            <CssBaseline />
+            <Nav />
+            <Routes>
+                {
+                    routes.map((route) => (
+                        <Route 
+                            key={route.name}
+                            path={route.path}
+                            element={<route.element />}>
+                        </Route>
+                    ))
+                }
+            </Routes>
         </div>
     );
 }

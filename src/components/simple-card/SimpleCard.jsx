@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 
 export default function SimpleCard(props) {
     return (
-        <Card sx={{ minWidth: 275, maxWidth: 800 }}>
+        <Card sx={{ minWidth: 275, maxWidth: props.maxWidth || 800 }}>
         <CardContent>
             <Typography sx={{ fontSize: 14 }} color="text.secondary">
                 {props.text}

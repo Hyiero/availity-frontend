@@ -9,3 +9,8 @@
     padding: 24px;
     background-color: rgb(231, 235, 240);
 }
+
+html, body, #root, #root>div {
+    height: 100%;
+    background-color: antiquewhite;
+}

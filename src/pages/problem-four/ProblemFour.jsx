@@ -19,7 +19,7 @@ export default function ProblemFourPage() {
     const checkCodeValidity = (lispCode) => {
         const config = { headers: { 'Content-Type': 'application/json'} };
 
-        axios.post('https://localhost:44312/api/lisp/validate/code', lispCode, config)
+        axios.post(`${process.env.REACT_APP_BASEURL}api/lisp/validate/code`, lispCode, config)
         .then(response => {
             setdataTableRows([ ...dataTableRows, { cells: [lispCode, response.data.toString()] } ])
         });
