@@ -1,0 +1,11 @@
+.main-content {
+    position: relative;
+    outline: 0px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background-color: rgb(231, 235, 240);
+}
