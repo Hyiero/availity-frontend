@@ -3,7 +3,7 @@ import { Grid } from "@mui/material";
 import React from 'react';
 
 export default function ProblemTwoPage() {
-    const textA = `a.) SELECT * FROM Customer where LastName like 'S%' order by LastName desc, FirstName Desc`;
+    const textA = `a.) SELECT * FROM Customer where LastName like 'S%' ORDER BY LastName DESC, FirstName DESC`;
     const textB = `b.) SELECT 
     CustID,
     SUM(COALESCE(OL.Cost, 0) * COALESCE(OL.Quantity, 0)) AS TotalCost

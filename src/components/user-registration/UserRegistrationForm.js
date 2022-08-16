@@ -99,7 +99,7 @@ export default function UserRegistrationForm(props) {
                 </Grid>
             </CardContent>
             <CardActions style={{ justifyContent: 'center' }}>
-                <Button disabled={!formValid} variant="contained" onClick={handleSubmitClick}>Submit</Button>
+                <Button id="userRegSubmitButton" disabled={!formValid} variant="contained" onClick={handleSubmitClick}>Submit</Button>
             </CardActions>
         </Card>
     );
