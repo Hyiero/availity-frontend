@@ -22,20 +22,22 @@ export default function ProblemTwoPage() {
 
  const answers = [textA, textB, textC];
     return (
-        <Grid container>
-            {
-                answers.map((answer, i) => (
-                    <React.Fragment
-                        key={i}
-                    >
-                        <Grid item xs={3}/>
-                        <Grid item xs={7} style={{ whiteSpace: 'pre', padding: 5 }}>
-                            <SimpleCard text={answer} maxWidth={1000} />
-                        </Grid>
-                        <Grid item xs={2}/>
-                    </React.Fragment>
-                ))
-            }
-        </Grid>
+        <div className='main-content'>
+            <Grid container>
+                {
+                    answers.map((answer, i) => (
+                        <React.Fragment
+                            key={i}
+                        >
+                            <Grid item xs={3}/>
+                            <Grid item xs={7} style={{ whiteSpace: 'pre', padding: 5 }}>
+                                <SimpleCard text={answer} maxWidth={1000} />
+                            </Grid>
+                            <Grid item xs={2}/>
+                        </React.Fragment>
+                    ))
+                }
+            </Grid>
+        </div>
       );
 }
