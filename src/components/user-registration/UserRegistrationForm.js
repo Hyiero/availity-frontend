@@ -49,7 +49,7 @@ export default function UserRegistrationForm(props) {
 
     const checkForErrors = (event) => {
         const { name, value } = event.target;
-        setErrors(!value ? { ...errors, [name]: 'Required Field' } : { ...errors, [name]: false })
+        setErrors(!Boolean(value.trim()) ? { ...errors, [name]: 'Required Field' } : { ...errors, [name]: false })
         if (name === 'email') {
             setErrors(!isValidEmail(value) ? { ...errors, email: 'Email Invalid' } : { ...errors, email: false });
         }
